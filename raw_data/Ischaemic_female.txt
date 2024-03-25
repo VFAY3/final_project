@@ -1,0 +1,59 @@
+	"County"	"County Code"	Deaths	Population	Crude Rate
+	"Alameda County, CA"	"06001"	2133	4222788	50.5
+	"Alpine County, CA"	"06003"	Suppressed	2584	Suppressed
+	"Amador County, CA"	"06005"	123	89645	137.2
+	"Butte County, CA"	"06007"	461	565635	81.5
+	"Calaveras County, CA"	"06009"	125	114693	109.0
+	"Colusa County, CA"	"06011"	41	52904	77.5
+	"Contra Costa County, CA"	"06013"	1501	2933267	51.2
+	"Del Norte County, CA"	"06015"	56	63216	88.6
+	"El Dorado County, CA"	"06017"	410	476864	86.0
+	"Fresno County, CA"	"06019"	2152	2486936	86.5
+	"Glenn County, CA"	"06021"	45	69356	64.9
+	"Humboldt County, CA"	"06023"	317	342025	92.7
+	"Imperial County, CA"	"06025"	248	442754	56.0
+	"Inyo County, CA"	"06027"	41	44933	91.2
+	"Kern County, CA"	"06029"	1828	2183050	83.7
+	"Kings County, CA"	"06031"	274	340591	80.4
+	"Lake County, CA"	"06033"	169	161131	104.9
+	"Lassen County, CA"	"06035"	55	58105	94.7
+	"Los Angeles County, CA"	"06037"	24515	25552940	95.9
+	"Madera County, CA"	"06039"	252	405751	62.1
+	"Marin County, CA"	"06041"	403	663230	60.8
+	"Mariposa County, CA"	"06043"	63	42628	147.8
+	"Mendocino County, CA"	"06045"	205	219737	93.3
+	"Merced County, CA"	"06047"	518	680061	76.2
+	"Modoc County, CA"	"06049"	18	21924	Unreliable
+	"Mono County, CA"	"06051"	Suppressed	33451	Suppressed
+	"Monterey County, CA"	"06053"	477	1066956	44.7
+	"Napa County, CA"	"06055"	344	349960	98.3
+	"Nevada County, CA"	"06057"	299	253340	118.0
+	"Orange County, CA"	"06059"	5946	8049402	73.9
+	"Placer County, CA"	"06061"	792	1004144	78.9
+	"Plumas County, CA"	"06063"	63	47105	133.7
+	"Riverside County, CA"	"06065"	5996	6130592	97.8
+	"Sacramento County, CA"	"06067"	3168	3934305	80.5
+	"San Benito County, CA"	"06069"	67	153508	43.6
+	"San Bernardino County, CA"	"06071"	4315	5443496	79.3
+	"San Diego County, CA"	"06073"	5280	8279980	63.8
+	"San Francisco County, CA"	"06075"	1360	2151138	63.2
+	"San Joaquin County, CA"	"06077"	1263	1886010	67.0
+	"San Luis Obispo County, CA"	"06079"	468	698577	67.0
+	"San Mateo County, CA"	"06081"	1124	1937527	58.0
+	"Santa Barbara County, CA"	"06083"	814	1115313	73.0
+	"Santa Clara County, CA"	"06085"	2121	4756661	44.6
+	"Santa Cruz County, CA"	"06087"	322	690887	46.6
+	"Shasta County, CA"	"06089"	640	457483	139.9
+	"Sierra County, CA"	"06091"	10	7334	Unreliable
+	"Siskiyou County, CA"	"06093"	123	109533	112.3
+	"Solano County, CA"	"06095"	585	1119544	52.3
+	"Sonoma County, CA"	"06097"	970	1274027	76.1
+	"Stanislaus County, CA"	"06099"	1422	1383183	102.8
+	"Sutter County, CA"	"06101"	222	242683	91.5
+	"Tehama County, CA"	"06103"	197	161432	122.0
+	"Trinity County, CA"	"06105"	22	30403	72.4
+	"Tulare County, CA"	"06107"	943	1163175	81.1
+	"Tuolumne County, CA"	"06109"	173	130535	132.5
+	"Ventura County, CA"	"06111"	1699	2142556	79.3
+	"Yolo County, CA"	"06113"	272	563979	48.2
+	"Yuba County, CA"	"06115"	184	192215	95.7

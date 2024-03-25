@@ -1,0 +1,37 @@
+---
+title: "Final Report"
+author: "Veronica Fay"
+date: '`r format(Sys.Date(), "%m-%d-%Y")`' 
+output: github_document
+---
+
+
+```{r set-global-chunk-options, echo=FALSE}
+library(knitr)
+opts_chunk$set(
+  echo=FALSE, warning = FALSE, message = FALSE
+)
+```
+
+```{r, here-i-am}
+here::i_am(
+  "report.Rmd"
+)
+```
+
+```{r,add-table}
+table <- readRDS(
+  file = here::here("output", "table.rds")
+)
+
+table
+```
+
+```{r, add-observed-mortality-map}
+knitr::include_graphics("output/Observed_MR_Map.png")
+```
+
+```{r, add-gendered-stratified-SMR-Maps}
+knitr::include_graphics("output/SMR_Gender_Stratified_Maps.png")
+```
+
