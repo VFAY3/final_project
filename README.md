@@ -84,5 +84,19 @@
 - include rule to make output/table.rds
 - include rule to make output/Observed_MR_Map.png
 - include rule to make report.md
+- include rule to make install - which runs a Rscript that synchronizes user's R packages 
+  to the versions that I used
 - include rule to clean 
+
+## Renv Lock File
+- Contains the versions of the R packages that I used to run my code/ create
+  my maps, table, and report
+  
+## renv/
+- contains activate.R script (part of the process of making everything automatic-
+  sourced in from the Rprofile for us to automatically start using project specific library)
+- contains settings.dcf
+  
+## To Synchronize Package Repository
+- Open make file & "make" the .PHONY rule install to synchronize R packages to version I used
 

@@ -10,6 +10,11 @@ output/table.rds: code/make_table.R output/clean_data_4_maps.rds
 output/clean_data_4_maps.rds: code/data_prep.R
 	Rscript code/data_prep.R
 	
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
+	
 .PHONY: clean
 clean:
 	rm output/*
+	
