@@ -1,11 +1,46 @@
+## Instructions for running the automated version of the containerized docker image
+- Clone repository from GitHub & save in desired location
+- Open the makefile & scroll to the bottom of page
+- In the terminal, run the make rule for report/report.html to generate the 
+the report in the containerized Docker image from Dockerhub. Output will be saved
+to report folder
+
+## Link to Docker Image on DockerHub
+
+https://hub.docker.com/repository/docker/vfay3/final_p_image/general 
+
+## Process of How I Built the Docker Image
+First I created a dockerfile in final_project directory and started building my docker image
+with an existing image from rock/r-ubuntu (which saves me having to install R). I then installed
+all the R packages I used for my project. Originally I tried to sync it with Renv, but my computer hates this
+and refuses to do it, so I had to manually add the packages as a work around. I then ran the apt-get update to make sure 
+I had the most recent versions of the packages & installed pandoc since I will need that to generate the rmarkdown documents. 
+I then made a directory called project, which I established as my working directory for docker. I then made all the files I would need to copy
+over from my project on my desktop (code, output, raw_data, Final_project) & then copied these folders into the new ones I made in the
+project directory. I also copied over my makefile & report.Rmd. After than I mounted the directory & added a entry point that would
+automatically make & move the report.html to the report folder (see comments in dockerfile for code used in terminal).
+
+
+# Note:
+-Although the files associated with Renv are not used for the docker container
+I am still including them on github since these files/ code were apart of the 
+last final project submission. 
+
 ## Description of overall Project Folder (final_project)
 - contains README.md
 - contains raw_data folder
 - contains code folder
 - contains output folder
+- contains report folder
+- contains Final_project folder
 - contains makefile
 - contains report.Rmd
 - contains report.md
+- contains dockerfile
+- contains renv folder
+- contains renv.lock 
+- contains .Rprofile
+- contains .Rhistory
 
 ## Description of Raw Data (Found in raw_data folder)
 
@@ -77,7 +112,7 @@
 - global chunk options set
 - read in table.rds from output folder to display table in report
 - include knitr graphics to display the Observed Mortality Rate Map and the Sex Stratified SMR Maps. pngs from the output folder
-- creates final report that shows the table of top ten counties with the highest observed Ischaemic Mortality Rates and the three maps that display the overall        observed Ischaemic mortality rate in California by county as well as the SMR maps for Ischaemic Mortality Rates stratified by sex. 
+- creates final report that shows the table of top ten counties with the highest observed Ischaemic Mortality Rates and the three maps that display the overall observed Ischaemic mortality rate in California by county as well as the SMR maps for Ischaemic Mortality Rates stratified by sex. 
 
 ## Description of Makefile
 - include rule to make output/clean_data_4_maps.rds
@@ -87,12 +122,14 @@
 - include rule to make install - which runs a Rscript that synchronizes user's R packages 
   to the versions that I used
 - include rule to clean 
+- include rule to build project image
+- include rule to run container automatically
 
-## Renv Lock File
+## Description of Renv Lock File
 - Contains the versions of the R packages that I used to run my code/ create
   my maps, table, and report
   
-## renv/
+## Description of renv/
 - contains activate.R script (part of the process of making everything automatic-
   sourced in from the Rprofile for us to automatically start using project specific library)
 - contains settings.dcf

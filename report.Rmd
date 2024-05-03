@@ -35,3 +35,7 @@ knitr::include_graphics("output/Observed_MR_Map.png")
 knitr::include_graphics("output/SMR_Gender_Stratified_Maps.png")
 ```
 
+```{r}
+
+```
+
